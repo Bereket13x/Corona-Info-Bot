@@ -20,7 +20,7 @@ START_TEXT = """Hello {}, I am a simple corona information of a country telegram
 
 Made by @FayasNoushad"""
 
-BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('⚙ Join Updates Channel ⚙', url='https://telegram.me/FayasNoushad')]])
+BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('⚙ Join our channel ⚙', url='https://telegram.me/ethioapk1')]])
 
 
 @Bot.on_message(filters.private & filters.command(["start"]))
@@ -71,7 +71,7 @@ Latitude : `{latitude}`
 Longitude : `{longitude}`
 Recovered : `{recovered}`
 
-Made by @FayasNoushad"""
+Made by @bereketx"""
         return covid_info
     except Exception as error:
         return error
