@@ -16,11 +16,11 @@ Bot = Client(
 
 API = "https://api.sumanjay.cf/covid/?country="
 
-START_TEXT = """Hello {}, I am a simple corona information of a country telegram bot.
+START_TEXT = """Hello {}, I am a simple corona information telegram bot. you can use me simply by entering the name of the country.
+ሰላም እኔ Corona Information Telegram Bot ነኝ። እባክዎ የሚፈልጉትን የሃገር ስም ይላኩልኝ።
+Made by @Bereketx"""
 
-Made by @FayasNoushad"""
-
-BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('⚙ Join Updates Channel ⚙', url='https://telegram.me/FayasNoushad')]])
+BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('⚙ Join My Channel ⚙', url='https://telegram.me/Ethio_Apps_Store')]])
 
 
 @Bot.on_message(filters.private & filters.command(["start"]))
@@ -71,7 +71,7 @@ Latitude : `{latitude}`
 Longitude : `{longitude}`
 Recovered : `{recovered}`
 
-Made by @FayasNoushad"""
+Made by @Bereketx"""
         return covid_info
     except Exception as error:
         return error
